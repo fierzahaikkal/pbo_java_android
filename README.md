@@ -1,5 +1,5 @@
-# Project Android PBO
-repository tugas kelompok mata kuliah pemrograman berbasis objek materi android
+# PBO Java Android
+Repository tugas kelompok mata kuliah pemrograman berbasis objek materi android
 
 ## Table of Contents
 
