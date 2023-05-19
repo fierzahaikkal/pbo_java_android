@@ -23,7 +23,7 @@ These instructions will help you set up the project on your local machine for de
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Rafli-Dewanto/project-android-pbo.git
+    git clone https://github.com/fierzahaikkal/pbo_java_android.git
     ```
 2. Open Android Studio.
 3. Click on "Open an existing Android Studio project" and select the cloned repository.
