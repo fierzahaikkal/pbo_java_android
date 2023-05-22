@@ -36,7 +36,7 @@ To contribute to the project, please follow the steps below:
 1. Open up your terminal and cd to your local repo
 2. Checkout dev branch on your local machine
     ```bash
-    git checkout dev
+    git checkout develop
     ```
 3. Create a new branch for your feature or bug fix:
     ```bash
