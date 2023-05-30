@@ -34,24 +34,48 @@ These instructions will help you set up the project on your local machine for de
 To contribute to the project, please follow the steps below:
 
 1. Open up your terminal and cd to your local repo
-2. Checkout dev branch on your local machine
+2. Checkout to develop branch on your local machine
     ```bash
     git checkout develop
     ```
-3. Create a new branch for your feature or bug fix:
+3. Check the latest repository updates
+    ```bash
+    git status
+    ```
+4. Pull all recent changes
+   ```bash
+   git pull
+   ```
+5. Create a new branch for your feature or bug fix:
     ```bash
     git checkout -b feature/your-feature-name
     ```
-4. Make your changes and test thoroughly.
-5. Commit your changes:
+    or
     ```bash
-    git commit -m "Add your commit message here"
+    gcb feature/your-feature-name
     ```
-6. Push the branch to your forked repository:
+6. Make your changes and test thoroughly.
+7. Check to see what changes have occurred
+   ```bash
+   git status
+   ```
+8. Change files into staged state
+   ```bash
+   git add .
+   ```
+9. Commit your changes:
+    ```bash
+    git commit -m "feature: add your message"
+    ```
+10. Fetch all the changes to keep your local repository updated
+    ```bash
+    git fetch
+    ```
+11. Push the branch to your forked repository:
     ```bash
     git push -u origin feature/your-feature-name
     ```
-7. Open a pull request on the main repository. Be sure to provide a clear and descriptive title, as well as a detailed description of the changes you've made.
+12. Open a pull request on the main repository. Be sure to provide a clear and descriptive title, as well as a detailed description of the changes you've made.
 
 ## License
 
