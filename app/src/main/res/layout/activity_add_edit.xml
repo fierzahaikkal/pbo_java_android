@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/putihPalette"
     tools:context=".AddEditActivity">
 
     <EditText
@@ -39,6 +40,8 @@
             android:layout_weight="0.5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/biruMudaPalette"
+            android:textColor="@color/putihPalette"
             android:text="Submit"/>
 
         <Button
@@ -46,6 +49,9 @@
             android:layout_weight="0.5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/biruMudaPalette"
+            android:textColor="@color/putihPalette"
+
             android:text="Cancel"/>
 
     </LinearLayout>

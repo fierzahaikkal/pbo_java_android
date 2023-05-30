@@ -8,4 +8,12 @@
     <color name="orange">#fca220</color>
     <color name="coklat">#c49b60</color>
     <color name="putih">#FFFFFF</color>
+
+    <!--    COLOR PALETTE-->
+    <color name="biruGelapPalette">#12223b</color>
+    <color name="biruMudaPalette">#364e68</color>
+    <color name="biruTerangPalette">#97ccd2</color>
+    <color name="putihPalette">#ebf0f6</color>
+
+
 </resources>
