@@ -5,29 +5,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".BilanganActivity">
+    android:gravity="center_horizontal"
+    android:theme="@style/OurTheme"
+    tools:context=".BilanganActivity"
+    android:background="@color/putihPalette">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Masukkan Angka" />
+        style="@style/TextAppearance.Material3.HeadlineMedium"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="35dp"
+        android:text="Membaca Bilangan" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Angka"
+            android:id="@+id/angka"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Masukkan Sembarang Angka"
-        android:id="@+id/angka"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.Button"
         android:text="Proses"
+        android:backgroundTint="@color/biruMudaPalette"
+        android:textColor="@color/putihPalette"
+        android:textSize="16dp"
+        android:paddingHorizontal="78px"
+        android:paddingVertical="30px"
+        android:layout_margin="25dp"
         android:id="@+id/proses"/>
 
     <TextView
+        android:id="@+id/bilangan"
+        style="@style/TextAppearance.Material3.DisplaySmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bilangan"
-        android:id="@+id/bilangan"/>
+        android:layout_marginTop="75dp"
+        android:text="Bilangan" />
 
 </LinearLayout>
