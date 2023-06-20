@@ -31,46 +31,52 @@
             <Button
                 android:id="@+id/buC"
                 android:text="C"
+                android:textSize="7pt"
                 android:onClick="cEvent"
-                android:textColor="@color/biruMudaPalette"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
                 android:layout_weight="1"
-                android:background="@color/biruTerangPalette"
+                android:background="@color/biruMudaPalette"
+                android:textColor="@color/putihPalette"
                 ></Button>
 
             <Button
                 android:id="@+id/buplusminus"
                 android:text="+/-"
+                android:textSize="7pt"
                 android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
                 android:layout_weight="1"
-                android:background="@color/biruTerangPalette"
+                android:background="@color/biruMudaPalette"
+                android:textColor="@color/putihPalette"
                 ></Button>
 
             <Button
                 android:id="@+id/bupercent"
                 android:text="%"
+                android:textSize="7pt"
                 android:onClick="percentEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
                 android:layout_weight="1"
-                android:background="@color/biruTerangPalette"
+                android:background="@color/biruMudaPalette"
+                android:textColor="@color/putihPalette"
                 ></Button>
 
             <Button
                 android:id="@+id/budivide"
                 android:text="/"
+                android:textSize="7pt"
                 android:onClick="operatorEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
                 android:layout_weight="1"
-                android:background="@color/biruGelapPalette"
+                android:background="@color/biruMudaPalette"
                 android:textColor="@color/putihPalette"
                 ></Button>
 
@@ -83,45 +89,52 @@
             <Button
                 android:id="@+id/bu7"
                 android:text="7"
+                android:textSize="7pt"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
-                android:layout_weight="1"
-                android:background="@color/biruTerangPalette"
-                ></Button>
-
-            <Button
-                android:id="@+id/bu8"
-                android:text="8"
-                android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
-                android:layout_weight="1"
-                android:background="@color/biruTerangPalette"
-                ></Button>
-
-            <Button
-                android:id="@+id/bu9"
-                android:text="9"
-                android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
-                android:layout_weight="1"
-                android:background="@color/biruTerangPalette"
-                ></Button>
-
-            <Button
-                android:id="@+id/bumultiply"
-                android:text="*"
-                android:onClick="operatorEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
                 android:layout_weight="1"
                 android:background="@color/biruGelapPalette"
+                android:textColor="@color/putihPalette"
+                ></Button>
+
+            <Button
+                android:id="@+id/bu8"
+                android:text="8"
+                android:textSize="7pt"
+                android:onClick="numberEvent"
+                android:layout_marginRight="1pt"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_weight="1"
+                android:background="@color/biruGelapPalette"
+                android:textColor="@color/putihPalette"
+                ></Button>
+
+            <Button
+                android:id="@+id/bu9"
+                android:text="9"
+                android:textSize="7pt"
+                android:onClick="numberEvent"
+                android:layout_marginRight="1pt"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_weight="1"
+                android:background="@color/biruGelapPalette"
+                android:textColor="@color/putihPalette"
+                ></Button>
+
+            <Button
+                android:id="@+id/bumultiply"
+                android:text="*"
+                android:textSize="7pt"
+                android:onClick="operatorEvent"
+                android:layout_marginRight="1pt"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_weight="1"
+                android:background="@color/biruMudaPalette"
                 android:textColor="@color/putihPalette"
                 ></Button>
 
@@ -134,45 +147,52 @@
             <Button
                 android:id="@+id/bu4"
                 android:text="4"
+                android:textSize="7pt"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
-                android:layout_weight="1"
-                android:background="@color/biruTerangPalette"
-                ></Button>
-
-            <Button
-                android:id="@+id/bu5"
-                android:text="5"
-                android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
-                android:layout_weight="1"
-                android:background="@color/biruTerangPalette"
-                ></Button>
-
-            <Button
-                android:id="@+id/bu6"
-                android:text="6"
-                android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
-                android:layout_weight="1"
-                android:background="@color/biruTerangPalette"
-                ></Button>
-
-            <Button
-                android:id="@+id/buminus"
-                android:text="-"
-                android:onClick="operatorEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
                 android:layout_weight="1"
                 android:background="@color/biruGelapPalette"
+                android:textColor="@color/putihPalette"
+                ></Button>
+
+            <Button
+                android:id="@+id/bu5"
+                android:text="5"
+                android:textSize="7pt"
+                android:onClick="numberEvent"
+                android:layout_marginRight="1pt"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_weight="1"
+                android:background="@color/biruGelapPalette"
+                android:textColor="@color/putihPalette"
+                ></Button>
+
+            <Button
+                android:id="@+id/bu6"
+                android:text="6"
+                android:textSize="7pt"
+                android:onClick="numberEvent"
+                android:layout_marginRight="1pt"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_weight="1"
+                android:background="@color/biruGelapPalette"
+                android:textColor="@color/putihPalette"
+                ></Button>
+
+            <Button
+                android:id="@+id/buminus"
+                android:text="-"
+                android:textSize="7pt"
+                android:onClick="operatorEvent"
+                android:layout_marginRight="1pt"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_weight="1"
+                android:background="@color/biruMudaPalette"
                 android:textColor="@color/putihPalette"
                 ></Button>
 
@@ -185,45 +205,52 @@
             <Button
                 android:id="@+id/bu1"
                 android:text="1"
+                android:textSize="7pt"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
-                android:layout_weight="1"
-                android:background="@color/biruTerangPalette"
-                ></Button>
-
-            <Button
-                android:id="@+id/bu2"
-                android:text="2"
-                android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
-                android:layout_weight="1"
-                android:background="@color/biruTerangPalette"
-                ></Button>
-
-            <Button
-                android:id="@+id/bu3"
-                android:text="3"
-                android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
-                android:layout_weight="1"
-                android:background="@color/biruTerangPalette"
-                ></Button>
-
-            <Button
-                android:id="@+id/buplus"
-                android:text="+"
-                android:onClick="operatorEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
                 android:layout_weight="1"
                 android:background="@color/biruGelapPalette"
+                android:textColor="@color/putihPalette"
+                ></Button>
+
+            <Button
+                android:id="@+id/bu2"
+                android:text="2"
+                android:textSize="7pt"
+                android:onClick="numberEvent"
+                android:layout_marginRight="1pt"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_weight="1"
+                android:background="@color/biruGelapPalette"
+                android:textColor="@color/putihPalette"
+                ></Button>
+
+            <Button
+                android:id="@+id/bu3"
+                android:text="3"
+                android:textSize="7pt"
+                android:onClick="numberEvent"
+                android:layout_marginRight="1pt"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_weight="1"
+                android:background="@color/biruGelapPalette"
+                android:textColor="@color/putihPalette"
+                ></Button>
+
+            <Button
+                android:id="@+id/buplus"
+                android:text="+"
+                android:textSize="7pt"
+                android:onClick="operatorEvent"
+                android:layout_marginRight="1pt"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_weight="1"
+                android:background="@color/biruMudaPalette"
                 android:textColor="@color/putihPalette"
                 ></Button>
 
@@ -236,39 +263,45 @@
         android:layout_height="wrap_content">
 
         <TableRow
+            android:layout_marginBottom="1pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
                 android:id="@+id/bu0"
                 android:text="0"
+                android:textSize="7pt"
                 android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="46pt"
                 android:layout_weight="2"
-                android:background="@color/biruTerangPalette"
+                android:background="@color/biruGelapPalette"
+                android:textColor="@color/putihPalette"
                 ></Button>
 
             <Button
                 android:id="@+id/budot"
                 android:text="."
+                android:textSize="7pt"
                 android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="46pt"
                 android:layout_weight="1"
-                android:background="@color/biruTerangPalette"
+                android:background="@color/biruGelapPalette"
+                android:textColor="@color/putihPalette"
                 ></Button>
 
             <Button
                 android:id="@+id/buequals"
                 android:text="="
+                android:textSize="7pt"
                 android:onClick="equalEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
                 android:layout_weight="1"
-                android:background="@color/biruGelapPalette"
+                android:background="@color/biruMudaPalette"
                 android:textColor="@color/putihPalette"
                 ></Button>
 
