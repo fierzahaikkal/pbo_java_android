@@ -31,6 +31,8 @@
             <Button
                 android:id="@+id/buC"
                 android:text="C"
+                android:onClick="cEvent"
+                android:textColor="@color/biruMudaPalette"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -41,6 +43,7 @@
             <Button
                 android:id="@+id/buplusminus"
                 android:text="+/-"
+                android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -51,6 +54,7 @@
             <Button
                 android:id="@+id/bupercent"
                 android:text="%"
+                android:onClick="percentEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -61,6 +65,7 @@
             <Button
                 android:id="@+id/budivide"
                 android:text="/"
+                android:onClick="operatorEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -78,6 +83,7 @@
             <Button
                 android:id="@+id/bu7"
                 android:text="7"
+                android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -88,6 +94,7 @@
             <Button
                 android:id="@+id/bu8"
                 android:text="8"
+                android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -98,6 +105,7 @@
             <Button
                 android:id="@+id/bu9"
                 android:text="9"
+                android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -108,6 +116,7 @@
             <Button
                 android:id="@+id/bumultiply"
                 android:text="*"
+                android:onClick="operatorEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -125,6 +134,7 @@
             <Button
                 android:id="@+id/bu4"
                 android:text="4"
+                android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -135,6 +145,7 @@
             <Button
                 android:id="@+id/bu5"
                 android:text="5"
+                android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -145,6 +156,7 @@
             <Button
                 android:id="@+id/bu6"
                 android:text="6"
+                android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -155,6 +167,7 @@
             <Button
                 android:id="@+id/buminus"
                 android:text="-"
+                android:onClick="operatorEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -172,6 +185,7 @@
             <Button
                 android:id="@+id/bu1"
                 android:text="1"
+                android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -182,6 +196,7 @@
             <Button
                 android:id="@+id/bu2"
                 android:text="2"
+                android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -192,6 +207,7 @@
             <Button
                 android:id="@+id/bu3"
                 android:text="3"
+                android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -202,6 +218,7 @@
             <Button
                 android:id="@+id/buplus"
                 android:text="+"
+                android:onClick="operatorEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
@@ -224,6 +241,7 @@
             <Button
                 android:id="@+id/bu0"
                 android:text="0"
+                android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="46pt"
@@ -234,6 +252,7 @@
             <Button
                 android:id="@+id/budot"
                 android:text="."
+                android:onClick="numberEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="46pt"
@@ -244,6 +263,7 @@
             <Button
                 android:id="@+id/buequals"
                 android:text="="
+                android:onClick="equalEvent"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
