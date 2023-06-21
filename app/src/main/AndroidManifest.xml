@@ -61,7 +61,7 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".BilanganActivity"
             android:exported="true"
-            android:theme="@style/OurTheme"/>
+            />
         <activity android:name=".KalkulatorActivity" />
         <activity android:name=".LingkaranActivity" />
         <activity android:name=".NamaActivity" />
@@ -76,6 +76,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
