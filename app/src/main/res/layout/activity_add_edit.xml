@@ -5,8 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="vertical"`
     android:background="@color/putihPalette"
+    android:theme="@style/OurTheme"
     tools:context=".AddEditActivity">
 
     <EditText
@@ -16,18 +17,33 @@
         android:inputType="number"
         android:visibility="gone"/>
 
-    <EditText
-        android:id="@+id/txt_name"
-        android:layout_width="match_parent"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        app:boxBackgroundColor="@color/biruTerangPalette"
+        android:layout_width="375dp"
         android:layout_height="wrap_content"
-        android:hint="Input Name"/>
+        android:layout_margin="15dp"
+        android:hint="Nama">
 
-    <EditText
-        android:id="@+id/txt_address"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        app:boxBackgroundColor="@color/biruTerangPalette"
+        android:layout_width="375dp"
         android:layout_height="wrap_content"
-        android:hint="Input Alamat"/>
+        android:layout_margin="15dp"
+        android:hint="Alamat">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_address"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
         android:orientation="horizontal"
