@@ -59,9 +59,7 @@
             android:label="Kalkulator Advance" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".BilanganActivity"
-            android:exported="true"
-            />
+        <activity android:name=".BilanganActivity"/>
         <activity android:name=".KalkulatorActivity" />
         <activity android:name=".LingkaranActivity" />
         <activity android:name=".NamaActivity" />

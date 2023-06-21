@@ -30,7 +30,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/inter"/>
+                android:fontFamily="@font/inter"
+                android:id="@+id/angka"/>
         </com.google.android.material.textfield.TextInputLayout>
     </RelativeLayout>
 
@@ -41,6 +42,7 @@
         android:layout_marginTop="30dp"
         android:background="@color/biruTerangPalette"
         style="@style/Widget.Material3.Button.ElevatedButton"
+        android:id="@+id/proses"
         />
 
     <TextView
