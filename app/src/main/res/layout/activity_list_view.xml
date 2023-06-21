@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/linLayout"
+    android:background="@color/putihPalette"
     android:orientation="horizontal"
     android:paddingBottom="5dp"
     android:paddingLeft="10dp"
@@ -21,9 +22,9 @@
 
         <ImageView
             android:id="@+id/imgView"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@mipmap/ic_launcher" />
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/icon" />
 
     </LinearLayout>
 
@@ -36,17 +37,21 @@
 
         <TextView
             android:id="@+id/text1"
+            android:fontFamily="@font/inter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Text1"
             android:textSize="16dp"
+            android:textColor="@color/biruGelapPalette"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/text2"
+            android:fontFamily="@font/inter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Text2"
+            android:textColor="@color/biruGelapPalette"
             android:textSize="11dp" />
     </LinearLayout>
 
