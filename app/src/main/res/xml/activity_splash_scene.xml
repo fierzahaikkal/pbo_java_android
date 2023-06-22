@@ -6,7 +6,7 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1000"
+        motion:duration="1500"
         motion:autoTransition="animateToEnd">
        <KeyFrameSet>
        </KeyFrameSet>
@@ -54,7 +54,7 @@
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            android:scaleX="1"
-            android:scaleY="1" />
+            android:scaleX="1.1"
+            android:scaleY="1.1" />
     </ConstraintSet>
 </MotionScene>
