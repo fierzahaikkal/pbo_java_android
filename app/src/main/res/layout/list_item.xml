@@ -2,16 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginTop="15pt"
+    android:background="@drawable/bg_turquoise"
+    android:alpha="0.6">
 
     <TextView
         android:id="@+id/id"
+        android:textSize="7pt"
+        android:fontFamily="@font/inter"
+        android:textColor="@color/biruMudaPalette"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7pt"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"/>
 
     <TextView
         android:id="@+id/name"
+        android:textSize="7pt"
+        android:fontFamily="@font/inter"
+        android:textColor="@color/biruGelapPalette"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2pt"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_marginBottom="5pt"/>
 
 </LinearLayout>
