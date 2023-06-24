@@ -294,6 +294,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
                     android:background="@drawable/catatan"
                     android:contentDescription="catatan"
                     android:padding="8dp" />
@@ -303,6 +304,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/catatan"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
                     android:text="Catatan" />
 
             </RelativeLayout>
@@ -316,6 +318,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
                     android:background="@drawable/file"
                     android:contentDescription="file"
                     android:padding="8dp" />
@@ -325,6 +328,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/internalexternal"
                     android:layout_marginLeft="28dp"
+                    android:layout_marginTop="1dp"
                     android:text="File" />
 
             </RelativeLayout>
