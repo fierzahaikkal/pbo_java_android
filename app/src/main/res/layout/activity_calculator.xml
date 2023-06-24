@@ -1,117 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
     tools:context=".CalculatorActivity">
 
-    <Button
-        android:text="+"
-        android:layout_height="wrap_content"
-        android:id="@+id/tambah"
-        android:layout_below="@+id/angka_kedua"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="18dp"
-        android:layout_width="80dp" />
-
-    <EditText
+    <RelativeLayout
+        android:id="@+id/inputNumber"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/angka_pertama"
-        android:hint="Harap masukkan angka pertama"
-        android:textSize="14sp"
-        android:layout_below="@+id/textView5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="22dp" />
+        android:layout_height="match_parent"
+        android:background="@drawable/radius"
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="290dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
 
-    <EditText
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kalkulator Dua Operand"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/biruMudaPalette"
+                android:fontFamily="@font/inter_extrabold"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/angka_pertama"
+                android:hint="Masukkan angka pertama"
+                android:textSize="14sp"
+                android:layout_marginTop="22dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/angka_kedua"
+                android:hint="Masukkan angka kedua"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/upperOperand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/tambah"
+                    android:layout_width="100dp"
+                    android:layout_height="58dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/calculator_radiusbutton"
+                    android:text="+"
+                    android:fontFamily="@font/inter_extrabold"
+                    android:textColor="@color/putih"
+                    android:textSize="25sp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/kurang"
+                    android:layout_width="100dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"
+                    android:background="@drawable/calculator_radiusbutton"
+                    android:text="-"
+                    android:fontFamily="@font/inter_extrabold"
+                    android:textColor="@color/putih"
+                    android:textSize="25sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/kali"
+                    android:layout_width="100dp"
+                    android:layout_height="58dp"
+                    android:background="@drawable/calculator_radiusbutton"
+                    android:text="x"
+                    android:fontFamily="@font/inter_extrabold"
+                    android:textColor="@color/putih"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginEnd="2dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bagi"
+                    android:layout_width="100dp"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"
+                    android:background="@drawable/calculator_radiusbutton"
+                    android:text="/"
+                    android:fontFamily="@font/inter_extrabold"
+                    android:textColor="@color/putih"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bersihkan"
+                    android:layout_width="204dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Bersihkan"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/inter_extrabold"
+                    android:textColor="@color/putih"
+                    android:background="@drawable/calculator_radiusbutton"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        app:layout_constraintBottom_toBottomOf="@id/inputNumber"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:layout_below="@+id/angka_pertama"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/angka_kedua"
-        android:hint="Masukkan angka kedua"
-        android:textSize="14sp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="530dp"
+        android:layout_marginBottom="210dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/radius">
 
-    <TextView
-        android:text="MASUKKAN DUA ANGKA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView5"
-        android:textAlignment="center"
-        android:textStyle="normal|bold"
-        android:textSize="24sp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Hasil"
+            android:textSize="20sp"
+            android:textColor="@color/biruMudaPalette"
+            android:fontFamily="@font/inter_extrabold"
+            android:textStyle="bold"/>
 
-    <TextView
-        android:text="0"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/hasil"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:textSize="36sp"
-        android:textAlignment="center" />
+        <TextView
+            android:id="@+id/hasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/biruMudaPalette"
+            android:fontFamily="@font/inter_extrabold"/>
 
-    <TextView
-        android:text="HASIl"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:textAlignment="center"
-        android:textStyle="normal|bold"
-        android:textSize="24sp"
-        android:layout_marginTop="35dp"
-        android:layout_below="@+id/bersihkan"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    </LinearLayout>
 
-    <Button
-        android:text="-"
-        android:layout_height="wrap_content"
-        android:id="@+id/kurang"
-        android:layout_width="80dp"
-        android:layout_alignBaseline="@+id/tambah"
-        android:layout_alignBottom="@+id/tambah"
-        android:layout_toRightOf="@+id/tambah"
-        android:layout_toEndOf="@+id/tambah" />
-
-    <Button
-        android:text="BERSIHKAN"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/bersihkan"
-        android:layout_below="@+id/tambah"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="/"
-        android:layout_height="wrap_content"
-        android:id="@+id/bagi"
-        android:layout_width="80dp"
-        android:layout_above="@+id/bersihkan"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:text="X"
-        android:layout_height="wrap_content"
-        android:id="@+id/kali"
-        android:layout_width="80dp"
-        android:layout_alignBaseline="@+id/bagi"
-        android:layout_alignBottom="@+id/bagi"
-        android:layout_toLeftOf="@+id/bagi"
-        android:layout_toStartOf="@+id/bagi" />
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
