@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="20dp"
     android:background="@drawable/bg_login"
     tools:context=".CalculatorActivity">
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
         android:background="@drawable/radius"
-        android:elevation="7dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="43dp"
-        android:layout_marginBottom="190dp">
+        android:elevation="7dp">
 
         <LinearLayout
             android:id="@+id/inputNumber"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginBottom="230dp"
             android:orientation="vertical">
 
             <TextView
@@ -67,9 +66,9 @@
             android:id="@+id/upperOperand"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="180dp"
             android:gravity="center_horizontal"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tambah"
@@ -100,7 +99,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/inputNumber"
-            android:layout_marginTop="235dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal">
 
@@ -135,7 +133,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="295dp"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
@@ -150,20 +147,16 @@
                 android:textColor="@color/biruTerangPalette"
                 android:textSize="17sp" />
         </LinearLayout>
-    </RelativeLayout>
+    </LinearLayout>
 
     <LinearLayout
-        app:layout_constraintBottom_toBottomOf="@id/header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="380dp"
-        android:layout_marginBottom="100dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
         android:elevation="7dp"
         android:background="@drawable/radius">
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -185,5 +178,4 @@
             android:fontFamily="@font/inter"/>
 
     </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
