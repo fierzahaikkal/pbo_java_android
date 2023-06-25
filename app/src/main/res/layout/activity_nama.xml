@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".NamaActivity">
+    tools:context=".NamaActivity"
+    android:background="@drawable/home">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Account Login"
+        android:text="registration"
         android:textSize="40sp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
@@ -18,10 +19,22 @@
         android:textStyle="bold" />
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:src="@drawable/logoorang"
-        android:contentDescription="logoorang" />
+        android:layout_height="139dp"
+        android:layout_margin="18dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginBottom="18dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/logo_dts"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
