@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/putihPalette"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="28dp"
     tools:context=".AddEditActivity">
 
     <EditText
@@ -16,43 +17,72 @@
         android:inputType="number"
         android:visibility="gone"/>
 
-    <EditText
-        android:id="@+id/txt_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Input Name"/>
+    <com.google.android.material.textfield.TextInputLayout
 
-    <EditText
-        android:id="@+id/txt_address"
-        android:layout_marginTop="10dp"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Input Alamat"/>
+        android:layout_margin="18dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:endIconCheckable="true"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/person_24px">
+
+    <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:endIconCheckable="true"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/location_on_24px">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_submit"
-            android:layout_weight="0.5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/biruMudaPalette"
-            android:textColor="@color/putihPalette"
-            android:text="Submit"/>
-
-        <Button
+            style="@style/Widget.Material3.Button.OutlinedButton"
             android:id="@+id/btn_cancel"
-            android:layout_weight="0.5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/biruMudaPalette"
-            android:textColor="@color/putihPalette"
+            android:layout_marginHorizontal="12dp"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_weight="0.5"
+            android:text="Cancel"
+            android:textColor="@color/colorPrimaryDark" />
 
-            android:text="Cancel"/>
+        <Button
+            style="@style/Widget.Material3.Button"
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginHorizontal="12dp"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:text="Submit"
+            android:textColor="@color/putihPalette" />
 
     </LinearLayout>
 

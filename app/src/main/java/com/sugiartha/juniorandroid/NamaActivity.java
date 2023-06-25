@@ -11,7 +11,9 @@ import android.widget.TextView;
 public class NamaActivity extends AppCompatActivity {
 
     Button btnOk;
+    Button btnClear;
     EditText editNama;
+    EditText editNPM;
     TextView txtHasil;
 
     @Override
@@ -19,14 +21,28 @@ public class NamaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nama);
 
-        btnOk = (Button) findViewById(R.id.btnOk);
-        editNama = (EditText) findViewById(R.id.editNama);
-        txtHasil = (TextView) findViewById(R.id.txtHasil);
-        btnOk.setOnClickListener(new Button.OnClickListener() {
+        btnOk = findViewById(R.id.btnOk);
+        btnClear = findViewById(R.id.btnClear);
+        editNama = findViewById(R.id.editNama);
+        editNPM = findViewById(R.id.editNPM);
+        txtHasil = findViewById(R.id.txtHasil);
+
+        btnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                txtHasil.setText("Hello " + editNama.getText().toString()
-                        + "!\nPeserta VSGA" + "");
+                String nama = editNama.getText().toString();
+                String npm = editNPM.getText().toString();
+                String hasil = "Nama anda \"" + nama + "\" dengan NPM " + npm;
+                txtHasil.setText(hasil);
+            }
+        });
+
+        btnClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editNama.getText().clear();
+                editNPM.getText().clear();
+                txtHasil.setText("");
             }
         });
     }

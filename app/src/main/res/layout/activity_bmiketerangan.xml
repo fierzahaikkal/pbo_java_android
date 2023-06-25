@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BMIketerangan"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/img1"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="550px"
+            android:layout_height="650px"
+            android:id="@+id/imgbmiunderweight"
+            android:src="@drawable/bmiunderweight"/>
+
+        <ImageView
+            android:layout_width="550px"
+            android:layout_height="650px"
+            android:layout_toRightOf="@+id/imgbmiunderweight"
+            android:id="@+id/imgbminormal"
+            android:src="@drawable/bminormal"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/img2"
+        android:layout_below="@id/img1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="500px"
+            android:layout_height="650px"
+            android:id="@+id/imgbmiresiko"
+            android:src="@drawable/bmiresikokelebihanbb"/>
+
+        <ImageView
+            android:layout_width="500px"
+            android:layout_height="650px"
+            android:layout_toRightOf="@id/imgbmiresiko"
+            android:id="@+id/imgbmikelebihan"
+            android:src="@drawable/bmikelebihanbb"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="500px"
+        android:layout_height="700px"
+        android:layout_below="@+id/img2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imgbmi"
+        android:src="@drawable/bmiobesitas"/>
+
+</RelativeLayout>

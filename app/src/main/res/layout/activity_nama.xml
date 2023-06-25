@@ -5,43 +5,105 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".NamaActivity">
+    tools:context=".NamaActivity"
+    android:background="@drawable/bg_login">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DATA PESERTA VSGA"
-        android:textSize="40dp"
+        android:text="Account Login"
+        android:textSize="40sp"
         android:layout_gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="139dp"
+        android:layout_margin="18dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginBottom="18dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/logo_dts"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="50dp"
-        android:textSize="20dp"
-        android:text="Nama : "/>
+        android:textSize="20sp"
+        android:text="Username : "
+        android:paddingBottom="10dp" />
+
+
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Masukkan Nama Anda"
-        android:id="@+id/editNama"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OK"
-        android:id="@+id/btnOk"/>
+        android:id="@+id/editNama"
+        android:paddingBottom="10dp"
+        android:background="@color/biruTerangPalette"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Data Peserta"
+        android:textSize="20sp"
+        android:text="NPM : "
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan NPM Anda"
+        android:id="@+id/editNPM"
+        android:paddingBottom="10dp"
+        android:background="@color/biruTerangPalette"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/btnOk"
+            android:layout_weight="1"
+            android:backgroundTint="@color/biruMudaPalette"
+            android:textColor="@color/putihPalette"
+            android:background="@drawable/icbutton"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:id="@+id/btnClear"
+            android:layout_weight="1"
+            android:backgroundTint="@color/biruMudaPalette"
+            android:textColor="@color/putihPalette"
+            android:background="@drawable/icbutton"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/txtHasil"
-        android:paddingBottom="80dp"/>
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

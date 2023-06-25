@@ -8,12 +8,16 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class SensorActivity extends AppCompatActivity {
-    TextView ProximitySensor, data;
+    TextView ProximitySensor, data, jarak;
     SensorManager mySensorManager;
     Sensor myProximitySensor;
+    ImageView Imgsensor;
+    LinearLayout begron;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +25,9 @@ public class SensorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sensor);
         ProximitySensor = (TextView) findViewById(R.id.proximitySensor);
         data = (TextView) findViewById(R.id.data);
+        Imgsensor = findViewById(R.id.imgsensor);
+        begron = findViewById(R.id.begron);
+        jarak = findViewById(R.id.jarak);
         mySensorManager = (SensorManager) getSystemService(
                 Context.SENSOR_SERVICE);
         myProximitySensor = mySensorManager.getDefaultSensor(
@@ -41,10 +48,15 @@ public class SensorActivity extends AppCompatActivity {
         public void onSensorChanged(SensorEvent event) {
             // TODO Auto-generated method stub
             if (event.sensor.getType() == Sensor.TYPE_PROXIMITY) {
+                jarak.setText("VALUES: "+event.values[0]+"cm");
                 if (event.values[0] == 0) {
-                    data.setText("Dekat");
+                    Imgsensor.setBackgroundResource(R.drawable.sensor);
+                    begron.setBackgroundColor(R.drawable.birumuda);
+                    data.setText("DEKAT SENSOR");
                 } else {
-                    data.setText("Jauh");
+                    Imgsensor.setBackgroundResource(R.drawable.sensor1);
+                    begron.setBackgroundColor(R.drawable.birumuda);
+                    data.setText("JAUH DARI SENSOR");
                 }
             }
         }
