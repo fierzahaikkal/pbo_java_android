@@ -21,6 +21,7 @@
         android:layout_height="270pt"
         android:layout_marginTop="5pt"
         android:background="@drawable/radius"
+        android:backgroundTint="@color/putihPalette"
         android:layout_gravity="center_horizontal">
 
         <TextView
