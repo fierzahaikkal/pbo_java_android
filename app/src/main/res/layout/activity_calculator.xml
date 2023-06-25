@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/radius"
+        android:elevation="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="43dp"
         android:layout_marginBottom="190dp">
@@ -43,6 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
+                android:backgroundTint="@color/biruTerangPalette"
                 android:ems="10"
                 android:hint="Masukkan angka pertama"
                 android:inputType="number"
@@ -53,6 +55,7 @@
                 android:id="@+id/angka_kedua"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/biruTerangPalette"
                 android:ems="10"
                 android:hint="Masukkan angka kedua"
                 android:inputType="number"
@@ -77,7 +80,7 @@
                 android:background="@drawable/calculator_radiusbutton"
                 android:fontFamily="@font/inter"
                 android:text="+"
-                android:textColor="@color/putih"
+                android:textColor="@color/biruTerangPalette"
                 android:textSize="25sp" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -89,7 +92,7 @@
                 android:background="@drawable/calculator_radiusbutton"
                 android:fontFamily="@font/inter"
                 android:text="-"
-                android:textColor="@color/putih"
+                android:textColor="@color/biruTerangPalette"
                 android:textSize="25sp" />
         </LinearLayout>
 
@@ -111,7 +114,8 @@
                 android:background="@drawable/calculator_radiusbutton"
                 android:fontFamily="@font/inter"
                 android:text="x"
-                android:textColor="@color/putih"
+                android:textAllCaps="false"
+                android:textColor="@color/biruTerangPalette"
                 android:textSize="20sp" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -123,8 +127,8 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/calculator_radiusbutton"
                 android:fontFamily="@font/inter"
-                android:text="/"
-                android:textColor="@color/putih"
+                android:text=":"
+                android:textColor="@color/biruTerangPalette"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -143,7 +147,7 @@
                 android:background="@drawable/calculator_radiusbutton"
                 android:fontFamily="@font/inter"
                 android:text="Bersihkan"
-                android:textColor="@color/putih"
+                android:textColor="@color/biruTerangPalette"
                 android:textSize="17sp" />
         </LinearLayout>
     </RelativeLayout>
@@ -157,6 +161,7 @@
         android:layout_marginBottom="100dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:elevation="7dp"
         android:background="@drawable/radius">
 
         <TextView
