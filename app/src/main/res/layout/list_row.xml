@@ -12,12 +12,12 @@
         android:text="List Row:"
         android:textColor="@color/putihPalette"
         android:textStyle="bold"
-        android:textSize="10pt"
+        android:textSize="8pt"
         android:layout_marginTop="10pt"
-        android:layout_marginLeft="11pt"/>
+        android:layout_marginLeft="10pt"/>
     
     <RelativeLayout
-        android:layout_width="160pt"
+        android:layout_width="157pt"
         android:layout_height="270pt"
         android:layout_marginTop="5pt"
         android:background="@drawable/radius"
