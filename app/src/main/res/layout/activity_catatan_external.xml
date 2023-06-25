@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/home"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".CatatanExternalActivity">
@@ -12,12 +13,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Aplikasi Catatan"
+        android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Penyimpanan internal"
+        android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -29,8 +32,8 @@
             android:id="@+id/input_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="top"
             android:hint="Tulis catatan disini"
+            android:gravity="center"
             android:inputType="textMultiLine"
             android:minLines="5" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -46,7 +49,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="SIMPAN CATATAN" />
+            android:text="SIMPAN CATATAN"
+            android:backgroundTint="@color/biruMudaPalette"
+            android:textColor="@color/putihPalette" />
 
         <View
             android:layout_width="16dp"
@@ -57,7 +62,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="LIHAT CATATAN" />
+            android:text="LIHAT CATATAN" android:backgroundTint="@color/biruMudaPalette"
+            android:textColor="@color/putihPalette"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <TextView
