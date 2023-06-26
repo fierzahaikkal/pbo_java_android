@@ -6,29 +6,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/putihPalette"
-    tools:context=".ListActivity">
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:divider="@color/biruTerangPalette"
-        android:dividerHeight="1dp"
-        android:layout_marginTop="27pt"
-        android:layout_marginLeft="4pt"
-        android:layout_marginRight="4pt"
-        android:id="@+id/list_view" />
+    tools:context=".ListActivity"
+    android:orientation="vertical">
 
     <TextView
         android:text="Pilih Nama Negara :"
         android:textStyle="bold"
-        android:textSize="9pt"
-        android:padding="5pt"
-        android:layout_marginTop="4pt"
+        android:textSize="18dp"
+        android:padding="15dp"
+        android:layout_marginTop="14dp"
         android:textColor="@color/biruMudaPalette"
         android:layout_alignParentTop="true"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/biruTerangPalette"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/list_view" />
 
 </RelativeLayout>
