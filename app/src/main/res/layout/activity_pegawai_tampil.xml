@@ -7,172 +7,135 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="@drawable/bg_login"
+    android:background="@drawable/bg3"
     tools:context=".PegawaiTampilActivity">
 
     <LinearLayout
-        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/pegawaiMainLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@drawable/radius"
-        android:layout_margin="15dp"
-        android:paddingTop="10dp"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
-        android:paddingBottom="10dp"
+        android:layout_margin="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="20dp"
         android:elevation="10dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="ID Pegawai"
-            android:textColor="@color/biruMudaPalette"
-            android:fontFamily="@font/inter_extrabold"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            />
-
-        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/biruTerangPalette"
-            android:id="@+id/editTextId"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nama Pegawai"
-            android:padding="10dp"
-            android:textColor="@color/biruMudaPalette"
-            android:fontFamily="@font/inter_extrabold"
-            android:textSize="17sp"
-            android:textStyle="bold"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/biruTerangPalette"
-            android:id="@+id/editTextName" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Posisi"
-            android:padding="10dp"
-            android:textColor="@color/biruMudaPalette"
-            android:fontFamily="@font/inter_extrabold"
-            android:textSize="17sp"
-            android:textStyle="bold"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/biruTerangPalette"
-            android:id="@+id/editTextDesg" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Salary"
-            android:padding="10dp"
-            android:textColor="@color/biruMudaPalette"
-            android:fontFamily="@font/inter_extrabold"
-            android:textSize="17sp"
-            android:textStyle="bold"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/biruTerangPalette"
-            android:id="@+id/editTextSalary" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buttonUpdate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="110dp"
+            style="@style/TextAppearance.Material3.HeadlineLarge"
+            android:text="Data Pegawai"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="110dp"
-            android:background="@drawable/buttoncolor"
-            android:fontFamily="@font/inter"
-            android:text="Update"
-            android:textColor="@color/putih"
-            android:textStyle="bold" />
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buttonDelete"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="110dp"
+            android:id="@+id/tilid"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="110dp"
+            android:hint="ID Pegawai"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:startIconDrawable="@drawable/id"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="#0000">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextId"
+                android:textSize="15dp"
+                android:background="@null"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilnamapeg"
+            android:layout_marginTop="20dp"
+            android:hint="Nama Pegawai"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:startIconDrawable="@drawable/nama"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="#0000">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextName"
+                android:textSize="15dp"
+                android:background="@null"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilposisi"
+            android:layout_marginTop="20dp"
+            android:hint="Posisi"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:startIconDrawable="@drawable/posisi"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="#0000">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextDesg"
+                android:textSize="15dp"
+                android:background="@null"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilsalary"
+            android:layout_marginTop="20dp"
+            android:hint="Salary"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:startIconDrawable="@drawable/rupiah"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="#0000">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextSalary"
+                android:textSize="15dp"
+                android:background="@null"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
             android:background="@drawable/buttoncolor"
-            android:fontFamily="@font/inter"
+            android:text="Update"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttoncolor"
             android:text="Hapus"
-            android:textColor="@color/putih"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
     </LinearLayout>
+
 </LinearLayout>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/biruTerangPalette"
-            android:id="@+id/editTextSalary" />
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/radius"
-        android:layout_marginTop="390dp"
-        android:layout_marginBottom="180dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        >
-
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/buttonUpdate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="110dp"
-                android:background="@drawable/buttoncolor"
-                android:fontFamily="@font/inter"
-                android:text="Update"
-                android:textColor="@color/putih"
-                android:textStyle="bold" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/buttonDelete"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="110dp"
-                android:background="@drawable/buttoncolor"
-                android:fontFamily="@font/inter"
-                android:text="Hapus"
-                android:textColor="@color/putih"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-    </RelativeLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
