@@ -18,16 +18,16 @@
         android:inputType="number"
         android:fontFamily="@font/inter"
         android:text="0"
-        android:layout_marginBottom="1pt"
-        android:textSize="30pt" />
+        android:layout_marginBottom="2dp"
+        android:textSize="66dp" />
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TableRow
-            android:layout_marginBottom="1pt"
-            android:layout_marginLeft="1pt"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
 
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -35,245 +35,261 @@
                 android:id="@+id/buC"
                 android:text="AC"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="cEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruMudaPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
             <Button
                 android:id="@+id/buplusminus"
                 android:text="+/-"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruMudaPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
             <Button
                 android:id="@+id/bupercent"
                 android:text="%"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="percentEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruMudaPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
             <Button
                 android:id="@+id/budivide"
                 android:text="/"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="operatorEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruMudaPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
-            </TableRow>
+        </TableRow>
 
         <TableRow
-            android:layout_marginBottom="1pt"
-            android:layout_marginLeft="1pt"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
                 android:id="@+id/bu7"
                 android:text="7"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruGelapPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
             <Button
                 android:id="@+id/bu8"
                 android:text="8"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruGelapPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
             <Button
                 android:id="@+id/bu9"
                 android:text="9"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruGelapPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
             <Button
                 android:id="@+id/bumultiply"
                 android:text="*"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="operatorEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruMudaPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
         </TableRow>
 
         <TableRow
-            android:layout_marginBottom="1pt"
-            android:layout_marginLeft="1pt"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
                 android:id="@+id/bu4"
                 android:text="4"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruGelapPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
             <Button
                 android:id="@+id/bu5"
                 android:text="5"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruGelapPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
             <Button
                 android:id="@+id/bu6"
                 android:text="6"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruGelapPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
             <Button
                 android:id="@+id/buminus"
                 android:text="-"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="operatorEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruMudaPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
         </TableRow>
 
         <TableRow
-            android:layout_marginBottom="1pt"
-            android:layout_marginLeft="1pt"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
                 android:id="@+id/bu1"
                 android:text="1"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruGelapPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
             <Button
                 android:id="@+id/bu2"
                 android:text="2"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruGelapPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
             <Button
                 android:id="@+id/bu3"
                 android:text="3"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruGelapPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
             <Button
                 android:id="@+id/buplus"
                 android:text="+"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="operatorEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruMudaPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
         </TableRow>
@@ -285,50 +301,53 @@
         android:layout_height="wrap_content">
 
         <TableRow
-            android:layout_marginBottom="1pt"
-            android:layout_marginLeft="1pt"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <Button
                 android:id="@+id/bu0"
                 android:text="0"
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="46pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="102dp"
                 android:layout_weight="2"
                 android:background="@color/biruGelapPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
             <Button
                 android:id="@+id/budot"
                 android:text="."
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="numberEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="46pt"
-                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="102dp"
+                android:layout_weight="2"
                 android:background="@color/biruGelapPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
             <Button
                 android:id="@+id/buequals"
                 android:text="="
                 android:fontFamily="@font/inter"
-                android:textSize="10pt"
+                android:textSize="22dp"
                 android:onClick="equalEvent"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
-                android:layout_width="30pt"
+                android:layout_marginRight="2dp"
+                android:layout_height="66dp"
+                android:layout_width="66dp"
                 android:layout_weight="1"
                 android:background="@color/biruMudaPalette"
                 android:textColor="@color/putihPalette"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 ></Button>
 
         </TableRow>

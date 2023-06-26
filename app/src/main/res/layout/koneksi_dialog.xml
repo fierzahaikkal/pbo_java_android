@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff7f7f">
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:id="@+id/imgclose"
+        android:layout_marginLeft="100px"
+        android:layout_toRightOf="@+id/img2"
+        android:src="@drawable/close"
+        android:clickable="true"
+        app:tint="#fff" />
+
+    <ImageView
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:id="@+id/img2"
+        android:src="@drawable/noconnect"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtnoconnection"
+        android:layout_below="@id/img2"
+        android:text="NO CONNECTION"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="100px"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:id="@+id/btnretry"
+        android:layout_marginTop="50px"
+        android:layout_below="@+id/txtnoconnection"
+        android:text="RETRY"
+        android:textSize="21sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/hasilbmi"/>
+
+</RelativeLayout>

@@ -1,41 +1,291 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg_turquoise"
+    android:gravity="center"
     tools:context=".HitungBMIActivity">
 
-    <EditText
-        android:id="@+id/txtBeratBadan"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Isikan berat badan (kg)"
-        android:inputType="number" />
+        android:id="@+id/gender"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp">
 
-    <EditText
-        android:id="@+id/txtTinggiBadan"
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:background="@color/md_theme_light_primaryContainer"
+            android:id="@+id/laki"
+            android:layout_marginRight="20px"
+            android:clickable="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="200px"
+                android:layout_height="260px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/guy" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Laki-laki"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10px"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:background="@color/md_theme_light_primaryContainer"
+            android:id="@+id/perempuan"
+            android:layout_toRightOf="@id/laki"
+            android:clickable="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="200px"
+                android:layout_height="260px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/girl" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Perempuan"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10px"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Isikan tinggi badan (m)"
-        android:inputType="number|numberDecimal" />
+        android:id="@+id/tinggiberat"
+        android:layout_below="@+id/gender"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40px">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/laki"
+            android:id="@+id/frameTinggiBadan"
+            android:background="@color/md_theme_light_primaryContainer"
+            android:layout_marginRight="20px">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnaddtinggi1"
+                android:text="+"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/addminus"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnaddtinggikoma"
+                android:layout_below="@+id/btnaddtinggi1"
+                android:text="+"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/addminuskoma"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnaddtinggikoma"
+                android:id="@+id/txttinggi"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="Tinggi Badan (Cm)"
+                android:layout_marginTop="15px"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:id="@+id/txtstatustinggi"
+                android:layout_below="@+id/txttinggi"
+                android:textAlignment="center"
+                android:text="140.0"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnminustinggikoma"
+                android:layout_below="@+id/txtstatustinggi"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/addminuskoma"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnminustinggi1"
+                android:layout_below="@+id/btnminustinggikoma"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/addminus"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameBeratBadan"
+            android:background="@color/md_theme_light_primaryContainer"
+            android:layout_toRightOf="@+id/frameTinggiBadan"
+            android:layout_below="@+id/laki">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnaddberat1"
+                android:text="+"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/addminus"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnaddberatkoma"
+                android:layout_below="@+id/btnaddberat1"
+                android:text="+"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/addminuskoma"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtberat"
+                android:layout_below="@id/btnaddberatkoma"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="Berat Badan (Kg)"
+                android:layout_marginTop="15px"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:id="@+id/txtstatusberat"
+                android:layout_below="@+id/txtberat"
+                android:textAlignment="center"
+                android:text="50.0"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnminusberatkoma"
+                android:layout_below="@+id/txtstatusberat"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/addminuskoma"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnminusberat1"
+                android:layout_below="@+id/btnminusberatkoma"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/addminus"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
 
     <Button
         android:id="@+id/btnCekBMI"
-        android:layout_width="match_parent"
+        android:layout_width="900px"
         android:layout_height="wrap_content"
-        android:text="CEK BMI" />
+        android:layout_below="@+id/tinggiberat"
+        android:layout_centerHorizontal="true"
+        android:text="CEK BMI"
+        android:layout_marginTop="40px"
+        android:background="@drawable/edit_text_background"/>
 
-    <TextView
-        android:id="@+id/txtStatusBadan"
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="950px"
         android:layout_height="wrap_content"
-        android:text="Status Badan"
-        android:textAlignment="center"
-        android:textSize="24sp" />
+        android:layout_below="@id/btnCekBMI"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:background="@color/md_theme_light_primaryContainer">
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/txtBMIGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@+id/btnCekBMI"
+            android:text="BMI untuk -"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tinggi (cm)                       Berat (kg)"
+            android:textAlignment="center"
+            android:layout_below="@+id/txtBMIGender"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtStatusBadan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status Badan"
+            android:textAlignment="center"
+            android:layout_below="@+id/txtStatus"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtBMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textAlignment="center"
+            android:layout_below="@+id/txtStatusBadan"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

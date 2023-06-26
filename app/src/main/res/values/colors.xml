@@ -15,5 +15,73 @@
     <color name="biruTerangPalette">#97ccd2</color>
     <color name="putihPalette">#ebf0f6</color>
 
+    <!--    COLOR PALETTE FOR M3-->
+
+    <color name="seed">#364e68</color>
+    <color name="md_theme_light_primary">#0062A0</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#D0E4FF</color>
+    <color name="md_theme_light_onPrimaryContainer">#001D35</color>
+    <color name="md_theme_light_secondary">#295EA7</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#D6E3FF</color>
+    <color name="md_theme_light_onSecondaryContainer">#001B3E</color>
+    <color name="md_theme_light_tertiary">#006971</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#83F3FF</color>
+    <color name="md_theme_light_onTertiaryContainer">#002023</color>
+    <color name="md_theme_light_error">#BA1A1A</color>
+    <color name="md_theme_light_errorContainer">#FFDAD6</color>
+    <color name="md_theme_light_onError">#FFFFFF</color>
+    <color name="md_theme_light_onErrorContainer">#410002</color>
+    <color name="md_theme_light_background">#FAFCFF</color>
+    <color name="md_theme_light_onBackground">#001F2A</color>
+    <color name="md_theme_light_surface">#FAFCFF</color>
+    <color name="md_theme_light_onSurface">#001F2A</color>
+    <color name="md_theme_light_surfaceVariant">#DFE3EB</color>
+    <color name="md_theme_light_onSurfaceVariant">#42474E</color>
+    <color name="md_theme_light_outline">#73777F</color>
+    <color name="md_theme_light_inverseOnSurface">#E1F4FF</color>
+    <color name="md_theme_light_inverseSurface">#003547</color>
+    <color name="md_theme_light_inversePrimary">#9CCAFF</color>
+    <color name="md_theme_light_shadow">#000000</color>
+    <color name="md_theme_light_surfaceTint">#0062A0</color>
+    <color name="md_theme_light_outlineVariant">#C2C7CF</color>
+    <color name="md_theme_light_scrim">#000000</color>
+    <color name="md_theme_dark_primary">#9CCAFF</color>
+    <color name="md_theme_dark_onPrimary">#003256</color>
+    <color name="md_theme_dark_primaryContainer">#00497A</color>
+    <color name="md_theme_dark_onPrimaryContainer">#D0E4FF</color>
+    <color name="md_theme_dark_secondary">#A9C7FF</color>
+    <color name="md_theme_dark_onSecondary">#003064</color>
+    <color name="md_theme_dark_secondaryContainer">#00468C</color>
+    <color name="md_theme_dark_onSecondaryContainer">#D6E3FF</color>
+    <color name="md_theme_dark_tertiary">#4DD9E6</color>
+    <color name="md_theme_dark_onTertiary">#00363B</color>
+    <color name="md_theme_dark_tertiaryContainer">#004F55</color>
+    <color name="md_theme_dark_onTertiaryContainer">#83F3FF</color>
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_errorContainer">#93000A</color>
+    <color name="md_theme_dark_onError">#690005</color>
+    <color name="md_theme_dark_onErrorContainer">#FFDAD6</color>
+    <color name="md_theme_dark_background">#001F2A</color>
+    <color name="md_theme_dark_onBackground">#BFE9FF</color>
+    <color name="md_theme_dark_surface">#001F2A</color>
+    <color name="md_theme_dark_onSurface">#BFE9FF</color>
+    <color name="md_theme_dark_surfaceVariant">#42474E</color>
+    <color name="md_theme_dark_onSurfaceVariant">#C2C7CF</color>
+    <color name="md_theme_dark_outline">#8C9199</color>
+    <color name="md_theme_dark_inverseOnSurface">#001F2A</color>
+    <color name="md_theme_dark_inverseSurface">#BFE9FF</color>
+    <color name="md_theme_dark_inversePrimary">#0062A0</color>
+    <color name="md_theme_dark_shadow">#000000</color>
+    <color name="md_theme_dark_surfaceTint">#9CCAFF</color>
+    <color name="md_theme_dark_outlineVariant">#42474E</color>
+    <color name="md_theme_dark_scrim">#000000</color>
+    <color name="CustomColor1">#FFDBAC</color>
+    <color name="googleplus">#dd4b39</color>
+    <color name="facebook">#1778f2</color>
+
+
 
 </resources>

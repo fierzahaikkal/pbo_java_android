@@ -2,7 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/side_nav_bar"
+    android:background="@color/biruMudaPalette"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -13,13 +13,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:layout_gravity="center"
         android:contentDescription="@string/nav_header_desc"
         android:gravity="center"
-        android:src="@drawable/dasi" />
+        android:src="@drawable/logo_dts" />
 
     <TextView
         android:layout_width="match_parent"
