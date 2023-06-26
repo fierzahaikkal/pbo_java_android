@@ -1,7 +1,5 @@
 package com.sugiartha.juniorandroid;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -11,6 +9,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class SensorActivity extends AppCompatActivity {
     TextView ProximitySensor, data, jarak;
@@ -51,11 +51,11 @@ public class SensorActivity extends AppCompatActivity {
                 jarak.setText("VALUES: "+event.values[0]+"cm");
                 if (event.values[0] == 0) {
                     Imgsensor.setBackgroundResource(R.drawable.sensor);
-                    begron.setBackgroundColor(R.drawable.birumuda);
+                    begron.setBackgroundColor(getResources().getColor(R.color.md_theme_light_primary));
                     data.setText("DEKAT SENSOR");
                 } else {
                     Imgsensor.setBackgroundResource(R.drawable.sensor1);
-                    begron.setBackgroundColor(R.drawable.birumuda);
+                    begron.setBackgroundColor(getResources().getColor(R.color.md_theme_light_primaryContainer));
                     data.setText("JAUH DARI SENSOR");
                 }
             }
