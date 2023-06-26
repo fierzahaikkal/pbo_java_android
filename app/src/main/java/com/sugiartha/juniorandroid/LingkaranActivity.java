@@ -10,26 +10,25 @@ import android.widget.TextView;
 
 public class LingkaranActivity extends AppCompatActivity {
 
-    Button hitung;
-    EditText jari2;
-    TextView nilai;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lingkaran);
 
-        hitung = (Button) findViewById(R.id.hitung);
-        jari2 = (EditText) findViewById(R.id.jari2);
-        nilai = (TextView) findViewById(R.id.nilai);
+        Button hitung = (Button) findViewById(R.id.hitung);
+        EditText jari2 = (EditText) findViewById(R.id.jari2);
+        TextView luas = (TextView) findViewById(R.id.luas);
+        TextView keliling = (TextView) findViewById(R.id.keliling);
 
         hitung.setOnClickListener(new Button.OnClickListener() {
             @Override public void onClick(View v) {
                 double jari = Double.parseDouble(jari2.getText().toString());
                 double phi = 3.14;
-                double luas = phi*jari*jari;
-                double keliling = 2*phi*jari;
-                nilai.setText("Luas Lingkaran : " + Double.toString(luas) + "\nKeliling Lingkaran : " + Double.toString(keliling) + "");
+                double dblLuas = phi*jari*jari;
+                double dblKeliling = 2*phi*jari;
+
+                luas.setText(Double.toString(dblLuas));
+                keliling.setText(Double.toString(dblKeliling));
             }});
     }
 }
