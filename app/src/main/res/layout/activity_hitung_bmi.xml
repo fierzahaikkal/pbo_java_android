@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg_login"
+    android:background="@drawable/bg_turquoise"
     android:gravity="center"
     tools:context=".HitungBMIActivity">
 
@@ -14,19 +14,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/gender"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp">
 
         <RelativeLayout
-            android:layout_width="480px"
-            android:layout_height="500px"
-            android:background="@drawable/edit_text_background"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:background="@color/md_theme_light_primaryContainer"
             android:id="@+id/laki"
             android:layout_marginRight="20px"
-            android:clickable="true">
+            android:clickable="true"
+            android:gravity="center">
 
             <ImageView
-                android:layout_width="355px"
-                android:layout_height="360px"
+                android:layout_width="200px"
+                android:layout_height="260px"
                 android:layout_centerInParent="true"
                 android:src="@drawable/guy" />
 
@@ -43,16 +45,17 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="480px"
-            android:layout_height="500px"
-            android:background="@drawable/edit_text_background"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:background="@color/md_theme_light_primaryContainer"
             android:id="@+id/perempuan"
             android:layout_toRightOf="@id/laki"
-            android:clickable="true">
+            android:clickable="true"
+            android:gravity="center">
 
             <ImageView
-                android:layout_width="355px"
-                android:layout_height="360px"
+                android:layout_width="200px"
+                android:layout_height="260px"
                 android:layout_centerInParent="true"
                 android:src="@drawable/girl" />
 
@@ -80,11 +83,11 @@
         android:layout_marginTop="40px">
 
         <RelativeLayout
-            android:layout_width="480px"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/laki"
             android:id="@+id/frameTinggiBadan"
-            android:background="@drawable/edit_text_background"
+            android:background="@color/md_theme_light_primaryContainer"
             android:layout_marginRight="20px">
 
             <Button
@@ -150,10 +153,10 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="480px"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:id="@+id/frameBeratBadan"
-            android:background="@drawable/edit_text_background"
+            android:background="@color/md_theme_light_primaryContainer"
             android:layout_toRightOf="@+id/frameTinggiBadan"
             android:layout_below="@+id/laki">
 
@@ -239,7 +242,7 @@
         android:layout_below="@id/btnCekBMI"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20px"
-        android:background="@drawable/hasilbmi">
+        android:background="@color/md_theme_light_primaryContainer">
 
         <TextView
             android:id="@+id/txtBMIGender"
