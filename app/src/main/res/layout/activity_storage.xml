@@ -5,25 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".StorageActivity">
+    tools:context=".StorageActivity"
+    android:gravity="center_horizontal"
+    android:background="@color/md_theme_light_background">
 
-    <EditText
-        android:id="@+id/input_data"
+    <TextView
+        style="@style/TextAppearance.Material3.HeadlineLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menyimpan File"
+        android:layout_marginVertical="48dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/edit_24px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Masukan Data"
-        android:inputType="textPersonName" />
+        android:layout_marginBottom="28dp"
+        android:layout_marginHorizontal="28dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="30">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Data" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        style="@style/Widget.Material3.Button.Icon"
+        app:icon="@drawable/add_24px"
         android:id="@+id/save_internal"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Simpan ke Internal" />
+        android:text="Simpan ke Internal"
+        android:layout_marginBottom="18dp"/>
 
     <Button
+        style="@style/Widget.Material3.Button.Icon"
+        app:icon="@drawable/add_24px"
         android:id="@+id/save_external"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Simpan ke External" />
 
