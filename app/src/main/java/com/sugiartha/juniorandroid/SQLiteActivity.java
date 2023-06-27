@@ -120,8 +120,8 @@ public class SQLiteActivity extends AppCompatActivity {
             Data data = new Data();
 
             data.setId(id);
-            data.setName(poster);
-            data.setAddress(title);
+            data.setName("Nama: "+poster);
+            data.setAddress("Alamat: "+title);
 
             itemList.add(data);
         }
