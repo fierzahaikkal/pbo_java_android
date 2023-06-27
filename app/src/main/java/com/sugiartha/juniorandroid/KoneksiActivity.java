@@ -24,7 +24,6 @@ public class KoneksiActivity extends AppCompatActivity {
         setContentView(R.layout.activity_koneksi);
 
         Button btnCheck = (Button) findViewById(R.id.btnCheck);
-        LottieAnimationView img1 = findViewById(R.id.img1);
         TextView txtcheck = findViewById(R.id.txtcheck);
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

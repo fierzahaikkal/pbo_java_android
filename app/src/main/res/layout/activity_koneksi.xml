@@ -17,7 +17,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtcheck"
-        android:layout_below="@+id/img1"
         android:textStyle="bold"
         android:layout_marginTop="340dp"
         android:textSize="70px"
@@ -32,7 +31,7 @@
         android:layout_gravity="center_horizontal">
 
         <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/img1"
+            android:id="@+id/koneksi_anim"
             android:layout_width="500dp"
             android:layout_height="308dp"
             android:layout_marginBottom="2000dp"
@@ -43,20 +42,36 @@
 
     </RelativeLayout>
 
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcheck">
 
-    <Button
-        android:id="@+id/btnCheck"
-        android:layout_width="500px"
-        android:layout_height="500px"
-        android:layout_below="@+id/txtcheck"
-        android:gravity="center"
-        android:layout_marginTop="50dp"
-        android:text="GO"
-        android:textSize="150px"
-        android:textColor="#fff"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="16dp"
-        android:background="@drawable/btn_bulat"
-        android:layout_centerHorizontal="true" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view_maps"
+            android:layout_width="match_parent"
+            android:layout_height="308dp"
+            android:layout_marginBottom="2000dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/wave" />
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_gravity="center"
+            android:text="GO"
+            android:textSize="150px"
+            android:textColor="#fff"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="16dp"
+            android:background="@drawable/btn_bulat"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </FrameLayout>
+
 
 </RelativeLayout>
