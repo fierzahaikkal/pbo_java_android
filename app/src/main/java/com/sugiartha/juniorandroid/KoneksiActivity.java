@@ -1,23 +1,20 @@
 package com.sugiartha.juniorandroid;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-import androidx.core.content.ContextCompat;
-
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+
+import com.airbnb.lottie.LottieAnimationView;
 
 public class KoneksiActivity extends AppCompatActivity {
 
@@ -27,9 +24,8 @@ public class KoneksiActivity extends AppCompatActivity {
         setContentView(R.layout.activity_koneksi);
 
         Button btnCheck = (Button) findViewById(R.id.btnCheck);
-        ImageView img1 = findViewById(R.id.img1);
+        LottieAnimationView img1 = findViewById(R.id.img1);
         TextView txtcheck = findViewById(R.id.txtcheck);
-        img1.setBackgroundResource(R.drawable.checkconnect);
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         View layoutView = getLayoutInflater().inflate(R.layout.koneksi_dialog, null);
@@ -48,7 +44,6 @@ public class KoneksiActivity extends AppCompatActivity {
                 ConnectivityManager cm = (ConnectivityManager) getApplication().getSystemService(Context.CONNECTIVITY_SERVICE);
                 NetworkInfo netInfo = cm.getActiveNetworkInfo();
                 if (netInfo != null && netInfo.isConnected()) {
-                    img1.setBackgroundResource(R.drawable.connect);
                     txtcheck.setText("You are connected to "+netInfo.getTypeName()+" "+netInfo.getSubtypeName());
                     txtcheck.setTextSize(20);
                     Toast.makeText(getApplication(), "You are connected to "+netInfo.getTypeName()+" "+netInfo.getSubtypeName(), Toast.LENGTH_SHORT).show();
@@ -63,7 +58,6 @@ public class KoneksiActivity extends AppCompatActivity {
                             NetworkInfo netInfo = cm.getActiveNetworkInfo();
                             if (netInfo != null && netInfo.isConnected()) {
                                 dialog.dismiss();
-                                img1.setBackgroundResource(R.drawable.connect);
                                 txtcheck.setText("You are connected to "+netInfo.getTypeName()+" "+netInfo.getSubtypeName());
                                 txtcheck.setTextSize(20);
                                 Toast.makeText(getApplication(), "You are connected to "+netInfo.getTypeName()+" "+netInfo.getSubtypeName(), Toast.LENGTH_SHORT).show();
