@@ -6,7 +6,7 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1500"
+        motion:duration="3000"
         motion:autoTransition="animateToEnd">
        <KeyFrameSet>
        </KeyFrameSet>
@@ -16,18 +16,30 @@
         <Constraint
             android:id="@+id/backgroundLayout"
             motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="10"
+            android:scaleY="10"
+            motion:transitionEasing="cubic(0.2,0.19,0.8,0.8)" />
+        <Constraint
+            android:id="@+id/bluelogo"
+            motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="150dp"
             android:layout_height="150dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            android:scaleX="10"
-            android:scaleY="10" />
+            android:scaleX="0"
+            android:scaleY="0"
+            android:alpha="0" />
         <Constraint
-            android:id="@+id/logo_id"
+            android:id="@+id/whitelogo"
             motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
@@ -39,6 +51,28 @@
         <Constraint
             android:id="@+id/backgroundLayout"
             motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0"
+            android:scaleY="0" />
+        <Constraint
+            android:id="@+id/bluelogo"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:alpha="1"
+            motion:transitionEasing="cubic(1,0,1,0)" />
+        <Constraint
+            android:id="@+id/whitelogo"
+            motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="150dp"
             android:layout_height="150dp"
             motion:layout_constraintBottom_toBottomOf="parent"
@@ -46,15 +80,5 @@
             motion:layout_constraintStart_toStartOf="parent"
             android:scaleX="0"
             android:scaleY="0" />
-        <Constraint
-            android:id="@+id/logo_id"
-            motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
-            android:scaleX="1.1"
-            android:scaleY="1.1" />
     </ConstraintSet>
 </MotionScene>

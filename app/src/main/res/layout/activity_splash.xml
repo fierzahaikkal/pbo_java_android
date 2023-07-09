@@ -4,27 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/activity_splash_scene"
+    android:background="@color/putihPalette"
+    app:layoutDescription="@xml/activity_splash_scene2"
     tools:context=".SplashActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/backgroundLayout"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:background="@drawable/background"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/logo_id"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:src="@mipmap/icon"
+        android:id="@+id/bluelogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logobiru"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/whitelogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/biru"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
