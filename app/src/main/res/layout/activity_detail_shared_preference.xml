@@ -5,19 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/home"
     tools:context=".DetailSharedPreferenceActivity">
 
-    <TextView
-        android:id="@+id/detailUsername"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:orientation="vertical"
+        android:background="@drawable/radius"
+        android:layout_margin="20dp"
+        android:padding="20dp">
 
-    <Button
-        android:id="@+id/buttonLogOut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="logout" />
+        <TextView
+            android:id="@+id/detailUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Button
+            android:id="@+id/buttonLogOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="logout" />
+    </LinearLayout>
+
 
 </LinearLayout>

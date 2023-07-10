@@ -6,58 +6,136 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/bg3"
     tools:context=".PegawaiTampilActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ID Pegawai"/>
-
-    <EditText
+    <LinearLayout
+        android:id="@+id/pegawaiMainLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextId" />
+        android:orientation="vertical"
+        android:background="@drawable/radius"
+        android:layout_margin="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="20dp"
+        android:elevation="10dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nama Pegawai" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Material3.HeadlineLarge"
+            android:text="Data Pegawai"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTextName" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilid"
+            android:layout_marginTop="10dp"
+            android:hint="ID Pegawai"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:startIconDrawable="@drawable/id"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="#0000">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextId"
+                android:textSize="15dp"
+                android:background="@null"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Posisi" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilnamapeg"
+            android:layout_marginTop="20dp"
+            android:hint="Nama Pegawai"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:startIconDrawable="@drawable/nama"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="#0000">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextName"
+                android:textSize="15dp"
+                android:background="@null"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTextDesg" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilposisi"
+            android:layout_marginTop="20dp"
+            android:hint="Posisi"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:startIconDrawable="@drawable/posisi"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="#0000">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextDesg"
+                android:textSize="15dp"
+                android:background="@null"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Salary" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilsalary"
+            android:layout_marginTop="20dp"
+            android:hint="Salary"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:startIconDrawable="@drawable/rupiah"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="#0000">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextSalary"
+                android:textSize="15dp"
+                android:background="@null"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTextSalary" />
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/buttoncolor"
+            android:text="Update"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Update Pegawai"
-        android:id="@+id/buttonUpdate" />
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttoncolor"
+            android:text="Hapus"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hapus Pegawai"
-        android:id="@+id/buttonDelete" />
+    </LinearLayout>
 
 </LinearLayout>

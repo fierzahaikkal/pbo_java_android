@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:background="@drawable/home"
+    tools:showIn="@layout/app_bar_main">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="600dp"
+        android:background="@color/biruTerangPalette"
+        android:layout_alignParentBottom="true" />
+
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/logo_dts" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="501dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="16dp">
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:fillColor="#FFFFFFFF"
+            app:pageColor="#00000000"
+            app:radius="6dp"
+            app:slideInterval="3000"
+            app:strokeColor="#FF777777"
+            app:strokeWidth="1dp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginLeft="170dp"
+        android:padding="8dp"
+        app:cardCornerRadius="30dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.MaterialComponents.SmallComponent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginLeft="43dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="132dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="223dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="305dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginLeft="43dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginLeft="133dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginLeft="221dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginLeft="303dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="238dp"
+        android:layout_marginLeft="303dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="220dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="130dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="45dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="45dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="130dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="220dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="305dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp">
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="650dp"
+        android:layout_below="@+id/carouselView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/nama"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/pendaftaran"
+                    android:contentDescription="Nama"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nama"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Nama" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp">
+
+                <Button
+                    android:id="@+id/kalkulator"
+                    android:layout_width="40dp"
+                    android:layout_height="41dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/kalkulator"
+                    android:contentDescription="Kalkulator"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kalkulator"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Kalkulator" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <Button
+                    android:id="@+id/lingkaran"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/lingkaran"
+                    android:contentDescription="Lingkaran"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lingkaran"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:text="Lingkaran" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_marginLeft="20dp">
+
+                <Button
+                    android:id="@+id/bilangan"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bilangan"
+                    android:contentDescription="bilangan"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="47dp"
+                    android:text="Bilangan" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="404dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="00dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="118dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="100dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="78dp"
+                    android:layout_marginTop="56dp"
+                    android:text="List" />
+
+                <Button
+                    android:id="@+id/list"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="73dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/list"
+                    android:contentDescription="list"
+                    android:padding="8dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="108dp"
+                android:layout_height="80dp">
+
+                <Button
+                    android:id="@+id/calculator"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/calculator"
+                    android:contentDescription="calculator"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/calculator"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="7dp"
+                    android:text="Calculator" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp">
+
+                <Button
+                    android:id="@+id/bmi"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/bmi"
+                    android:contentDescription="bmi"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bmi"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:text="BMI" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="180dp">
+
+                <Button
+                    android:id="@+id/listview"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/listview"
+                    android:contentDescription="listview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/listview"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="List View" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="85dp"
+                android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="53dp"
+                android:text="SQLite" />
+
+            <Button
+                android:id="@+id/sqlite"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sqlite"
+                android:contentDescription="sqlite"
+                android:padding="8dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="85dp"
+                android:layout_height="70dp">
+
+                <Button
+                    android:id="@+id/gps"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/gps"
+                    android:contentDescription="gps"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gps"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:text="Gps" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="83dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/internalexternal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/file"
+                    android:contentDescription="file"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/internalexternal"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="10dp"
+                    android:text="File" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="79dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/storage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/storage"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="storage"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/storage"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Storage" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="100dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp">
+
+                <Button
+                    android:id="@+id/seluler"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/seluler"
+                    android:contentDescription="seluler"
+                    android:padding="8dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/seluler"
+                    android:text="Seluler"
+                    android:layout_marginTop="8dp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="84dp"
+                android:layout_height="70dp">
+
+                <Button
+                    android:id="@+id/sensor"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/sensor"
+                    android:layout_marginTop="7dp"
+                    android:contentDescription="sensor"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="53dp"
+                    android:text="Sensor" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="92dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/mysql"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="22dp"
+                    android:background="@drawable/mysql"
+                    android:contentDescription="mysql"
+                    android:layout_marginTop="13dp"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mysql"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="MYsql" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp">
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/signup"
+                    android:contentDescription="Sign Up"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/signup"
+                    android:layout_marginLeft="6dp"
+                    android:text="Sign Up"
+                    android:layout_marginTop="8dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+            <RelativeLayout
+                android:layout_width="92dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginBottom="30dp">
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/login"
+                    android:contentDescription="login"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/login"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Login" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="85dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="50dp">
+
+                <Button
+                    android:id="@+id/catatan"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/catatan"
+                    android:contentDescription="catatan"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/catatan"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:text="Catatan" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

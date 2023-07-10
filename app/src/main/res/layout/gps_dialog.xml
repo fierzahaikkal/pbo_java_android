@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:id="@+id/imgclose"
+        android:layout_marginLeft="250px"
+        android:layout_toRightOf="@+id/img2"
+        android:src="@drawable/close"
+        android:clickable="true"
+        app:tint="#000"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/img2"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_rawRes="@raw/location" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtlokasi"
+        android:layout_below="@id/img2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff0500"
+        android:text="LOKASI ANDA"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:id="@+id/txtlocation"
+        android:layout_below="@id/txtlokasi"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="50px"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="800px"
+        android:layout_height="150px"
+        android:id="@+id/btnok"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:layout_below="@+id/txtlocation"
+        android:text="PILIH TUJUAN"
+        android:textSize="21sp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

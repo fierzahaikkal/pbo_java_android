@@ -6,48 +6,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/linLayout"
+    android:background="@color/putihPalette"
     android:orientation="horizontal"
     android:paddingBottom="5dp"
     android:paddingLeft="10dp"
+    android:paddingRight="10dp"
     android:paddingTop="5dp"
     android:weightSum="2"
     tools:context=".ListViewActivity">
-
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.3"
-        android:padding="5dp">
+        android:elevation="5dp"
+        app:cardMaxElevation="5dp"
+        android:id="@+id/cardView"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:padding="5dp">
 
-        <ImageView
-            android:id="@+id/imgView"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@mipmap/ic_launcher" />
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/icon"
+                />
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1.7"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/text1"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Text1"
-            android:textSize="16dp"
-            android:textStyle="bold" />
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/text2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Text2"
-            android:textSize="11dp" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/text1"
+                android:fontFamily="@font/inter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text1"
+                android:textSize="20dp"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:textColor="@color/biruGelapPalette"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:fontFamily="@font/inter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="Text2"
+                android:textColor="@color/biruGelapPalette"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 
 </LinearLayout>

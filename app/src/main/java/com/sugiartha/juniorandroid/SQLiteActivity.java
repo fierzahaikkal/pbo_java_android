@@ -11,14 +11,19 @@ import com.sugiartha.juniorandroid.adapter.Adapter;
 import com.sugiartha.juniorandroid.helper.DbHelper;
 import com.sugiartha.juniorandroid.model.Data;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.MenuItemCompat;
 
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.SearchView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -115,11 +120,44 @@ public class SQLiteActivity extends AppCompatActivity {
             Data data = new Data();
 
             data.setId(id);
-            data.setName(poster);
-            data.setAddress(title);
+            data.setName("Nama: "+poster);
+            data.setAddress("Alamat: "+title);
 
             itemList.add(data);
         }
         adapter.notifyDataSetChanged();
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_hapus, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==R.id.hapus){
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Hapus semua data?");
+            builder.setMessage("Apakah anda ingin menghapus semua data?");
+            builder.setPositiveButton("Ya", new DialogInterface.OnClickListener(){
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    Toast.makeText(SQLiteActivity.this, "Semua data dihapus", Toast.LENGTH_SHORT).show();
+                    DbHelper db = new DbHelper(SQLiteActivity.this);
+                    db.deleteAllData();
+                    Intent intent = new Intent(SQLiteActivity.this, SQLiteActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+            });
+            builder.setNegativeButton("Tidak", new DialogInterface.OnClickListener(){
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+
+                }
+            });
+            builder.create().show();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

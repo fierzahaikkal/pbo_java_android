@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:gravity="center"
     android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/begron"
+        android:layout_width="800px"
+        android:layout_height="800px"
+        android:background="@drawable/bulat_terang">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imgsensor2"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/signal" />
+
+        <ImageView
+            android:id="@+id/imgsensor"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_gravity="center"
+            android:src="@drawable/motionsensor"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imgsensor3"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_gravity="center"
+            app:lottie_rawRes="@raw/hand"/>
+
+    </FrameLayout>
+
 
     <TextView
         android:id="@+id/proximitySensor"
@@ -14,6 +49,32 @@
         android:id="@+id/data"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="50dp" />
+        android:textSize="40dp"
+        android:gravity="center"
+        android:text="JAUH DARI SENSOR"/>
+
+    <TextView
+        android:id="@+id/jarak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imgsensor4"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="100px"
+        app:lottie_rawRes="@raw/proximitysensor"/>
+
+    <TextView
+        android:id="@+id/txtinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Letakkan tangan di atas sensor!"/>
 
 </LinearLayout>
