@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class DbHelper extends SQLiteOpenHelper {
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 6;
 
     static final String DATABASE_NAME = "digitaltalent.db";
 
@@ -96,5 +96,18 @@ public class DbHelper extends SQLiteOpenHelper {
     public void deleteAllData() {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("DELETE FROM "+TABLE_SQLite);
+    }
+
+    public void dropTable(SQLiteDatabase db){
+        String[] tableNames = {
+                TABLE_SQLite,
+        };
+
+        for (String tableName : tableNames) {
+            String dropTableQuery = "DROP TABLE IF EXISTS " + tableName;
+            db.execSQL(dropTableQuery);
+        }
+
+        onCreate(db);
     }
 }

@@ -36,7 +36,7 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        UserHelper userHelper = new UserHelper(this);
+        UserHelper userHelper = new UserHelper(SignupActivity.this);
 
         nama = findViewById(R.id.nama);
         email = findViewById(R.id.email);

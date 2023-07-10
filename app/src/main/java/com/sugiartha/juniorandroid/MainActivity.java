@@ -1,6 +1,7 @@
 package com.sugiartha.juniorandroid;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,6 +17,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
+import com.sugiartha.juniorandroid.helper.DbHelper;
+import com.sugiartha.juniorandroid.helper.UserHelper;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
 
+        refreshTable();
 
         carouselView = findViewById(R.id.carouselView);
         carouselView.setPageCount(sampleImages.length);
@@ -221,8 +225,6 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
-
-
     }
 
     ImageListener imageListener = new ImageListener() {
@@ -287,5 +289,16 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void refreshTable(){
+        DbHelper dbHelper = new DbHelper(MainActivity.this);
+        UserHelper userHelper = new UserHelper(MainActivity.this);
+
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        SQLiteDatabase dbUser = userHelper.getWritableDatabase();
+
+        dbHelper.dropTable(db);
+        userHelper.dropTable(dbUser);
     }
 }
