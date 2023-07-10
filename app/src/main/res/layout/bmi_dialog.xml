@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="400px"
+        android:layout_height="600px"
+        android:id="@+id/imgstatus"
+        android:layout_marginLeft="250px"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        app:tint="#000"/>
+
+    <TextView
+        android:id="@+id/txtBMIGenderd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@+id/imgstatus"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtStatusd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@+id/txtBMIGenderd"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtStatusBadand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@+id/txtStatusd"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtBMId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@+id/txtStatusBadand"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="800px"
+        android:layout_height="150px"
+        android:id="@+id/btnok"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:layout_below="@+id/txtBMId"
+        android:text="OK"
+        android:textSize="21sp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

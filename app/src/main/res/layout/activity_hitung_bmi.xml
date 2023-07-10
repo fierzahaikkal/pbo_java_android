@@ -237,12 +237,14 @@
         android:background="@drawable/edit_text_background"/>
 
     <RelativeLayout
+        android:id="@+id/rlhasil"
         android:layout_width="950px"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnCekBMI"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20px"
-        android:background="@color/md_theme_light_primaryContainer">
+        android:background="@color/md_theme_light_primaryContainer"
+        android:clickable="true">
 
         <TextView
             android:id="@+id/txtBMIGender"

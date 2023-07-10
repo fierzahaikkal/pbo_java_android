@@ -2,8 +2,10 @@ package com.sugiartha.juniorandroid;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.content.ContextCompat;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
@@ -14,6 +16,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,7 +31,8 @@ public class HitungBMIActivity extends AppCompatActivity {
 
     Button btnaddtinggi1, btnaddtinggikoma, btnminustinggi1, btnminustinggikoma, btnaddberat1, btnaddberatkoma, btnminusberat1, btnminusberatkoma;
 
-    RelativeLayout laki, perempuan;
+    RelativeLayout laki, perempuan, rlhasil;
+
     String gender = "0";
 
     @Override
@@ -70,6 +74,21 @@ public class HitungBMIActivity extends AppCompatActivity {
         btnCekBMI = findViewById(R.id.btnCekBMI); //Menyambungkan elemen dengan id btnCekBMI yang ada di activity_main.xml kesini
         laki = findViewById(R.id.laki);
         perempuan = findViewById(R.id.perempuan);
+        rlhasil = findViewById(R.id.rlhasil);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        View layoutView = getLayoutInflater().inflate(R.layout.bmi_dialog, null);
+
+        AppCompatButton btnok = layoutView.findViewById(R.id.btnok);
+        ImageView imgclose = layoutView.findViewById(R.id.imgclose);
+        ImageView imgstatus = layoutView.findViewById(R.id.imgstatus);
+        TextView txtBMIGenderd = layoutView.findViewById(R.id.txtBMIGenderd);
+        TextView txtStatusBadand = layoutView.findViewById(R.id.txtStatusBadand);
+        TextView txtStatusd = layoutView.findViewById(R.id.txtStatusd);
+        TextView txtBMId = layoutView.findViewById(R.id.txtBMId);
+        builder.setView(layoutView);
+        AlertDialog dialog = builder.create();
+        dialog.setCancelable(false);
 
 
         laki.setOnClickListener(new View.OnClickListener() {
@@ -166,17 +185,15 @@ public class HitungBMIActivity extends AppCompatActivity {
             }
         });
 
-
         //btnCekBMI.setOnClickListener dibawah ini maksudnya adalah untuk me-listen (mengamati) btnCekBMI apakah ada click, apabila ada click, maka code didalamnya akan dieksekusi
         btnCekBMI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String stringTinggiBadan = txtstatustinggi.getText().toString(); //Mengambil value yang ada di EditText txtBeratBadan dan dimasukkan ke variabel stringBeratBadan
-                String stringBeratBadan = txtstatusberat.getText().toString(); //Mengambil value yang ada di EditText txtTinggiBadan dan dimasukkan ke variabel stringTinggiBadan
 
                 //Pada 2 baris code di atas, hasil yang didapatkan dari EditText adalah berbentuk STRING (defaultnya memang string)
                 //Sedangkan yang kita butuhkan adalah berbentuk double, maka kita convert dulu 2 string tersebut ke tipe data double
-
+                String stringTinggiBadan = txtstatustinggi.getText().toString();
+                String stringBeratBadan = txtstatusberat.getText().toString();
                 if (stringBeratBadan !="0" && stringTinggiBadan !="0" && gender !="0"){
                     double beratBadan = Double.parseDouble(stringBeratBadan);
                     double tinggiBadan = Double.parseDouble(stringTinggiBadan);
@@ -196,11 +213,43 @@ public class HitungBMIActivity extends AppCompatActivity {
                     txtBMI.setText(Double.toString(BMI));
 
                     txtStatus.setText("Tinggi "+tinggiBadan+" cm                    Berat "+beratBadan+" kg");
+
+                    if(statusBadan == "Anda kekurangan berat badan"){
+                        imgstatus.setBackgroundResource(R.drawable.bmiunderweight);
+                    } else if(statusBadan == "Berat badan anda normal (ideal)"){
+                        imgstatus.setBackgroundResource(R.drawable.bminormal);
+                    } else if(statusBadan == "Anda beresiko kelebihan berat badan"){
+                        imgstatus.setBackgroundResource(R.drawable.bmiresikokelebihanbb);
+                    } else if(statusBadan == "Anda kelebihan berat badan"){
+                        imgstatus.setBackgroundResource(R.drawable.bmikelebihanbb);
+                    }else {
+                        imgstatus.setBackgroundResource(R.drawable.bmiobesitas);
+                    }
                 }
                 else{
                     Toast.makeText(HitungBMIActivity.this,"Jenis kelamin, Tinggi, dan berat harap diisi", Toast.LENGTH_SHORT).show();
                 }
             }});
+
+        rlhasil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                dialog.show();
+                txtBMIGenderd.setText(txtBMIGender.getText());
+                txtStatusd.setText(txtStatus.getText());
+                txtStatusBadand.setText(txtStatusBadan.getText());
+                txtBMId.setText(txtBMI.getText());
+                txtStatusd.setText(txtStatus.getText());
+
+                btnok.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog.dismiss();
+                    }
+                });
+            }
+        });
 
 
 
