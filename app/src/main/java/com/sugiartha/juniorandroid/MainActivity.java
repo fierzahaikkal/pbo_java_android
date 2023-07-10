@@ -2,29 +2,22 @@ package com.sugiartha.juniorandroid;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import android.view.View;
-
-import androidx.core.view.GravityCompat;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-
-import android.view.MenuItem;
-
 import com.google.android.material.navigation.NavigationView;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
-
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import android.view.Menu;
-import android.widget.Button;
-import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -40,6 +33,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
+
 
         carouselView = findViewById(R.id.carouselView);
         carouselView.setPageCount(sampleImages.length);
@@ -227,6 +221,7 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
 
     }
 

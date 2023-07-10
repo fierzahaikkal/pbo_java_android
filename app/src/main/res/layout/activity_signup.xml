@@ -129,7 +129,7 @@
         <RadioGroup
             android:layout_width="750px"
             android:layout_height="wrap_content"
-            android:id="@+id/rggender"
+            android:id="@+id/radio"
             android:layout_below="@id/tilpassword"
             android:layout_centerHorizontal="true"
             android:orientation="horizontal">
@@ -137,14 +137,15 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/laki"
+                android:id="@+id/radioPria"
+                android:checked="true"
                 android:layout_marginRight="20px"
                 android:text="Laki-laki"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/perempuan"
+                android:id="@+id/radioWanita"
                 android:text="Perempuan"/>
 
         </RadioGroup>
@@ -153,7 +154,7 @@
             android:id="@+id/btnsignup"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/rggender"
+            android:layout_below="@+id/radio"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
             android:background="@drawable/button_signup"
