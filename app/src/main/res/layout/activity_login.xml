@@ -78,6 +78,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
+                android:id="@+id/btn_login"
                 style="@style/Widget.Material3.Button.Icon"
                 app:icon="@drawable/login"
                 android:layout_width="wrap_content"
@@ -94,6 +95,7 @@
                 app:dividerInsetStart="32dp" />
 
             <Button
+                android:id="@+id/btn_facebook"
                 style="@style/Widget.Material3.Button"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
@@ -103,11 +105,35 @@
                 />
 
             <Button
+                android:id="@+id/btn_google"
                 style="@style/Widget.Material3.Button"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/googleplus"
                 android:text="Google+"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnsignup"
+                android:layout_marginTop="30px"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum punya akun?"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ke_signup"
+                    android:layout_toRightOf="@+id/login"
+                    android:text=" daftar sekarang!"
+                    android:textColor="#f06292"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"/>
+            </RelativeLayout>
 
         </LinearLayout>
 

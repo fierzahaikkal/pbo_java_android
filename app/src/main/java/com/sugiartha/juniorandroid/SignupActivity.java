@@ -1,23 +1,22 @@
 package com.sugiartha.juniorandroid;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.sugiartha.juniorandroid.helper.UserHelper;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -27,6 +26,7 @@ public class SignupActivity extends AppCompatActivity {
     TextInputEditText nama, email, username, password;
     TextInputLayout tilemail, tilusername, tilpassword;
     RadioGroup gender;
+    RadioButton radioButton;
     Button btnsignup;
     TextView pindahlogin;
     //array of strings used to populate the spinner
@@ -36,6 +36,8 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
+        UserHelper userHelper = new UserHelper(this);
+
         nama = findViewById(R.id.nama);
         email = findViewById(R.id.email);
         username = findViewById(R.id.username);
@@ -43,7 +45,7 @@ public class SignupActivity extends AppCompatActivity {
         tilemail = findViewById(R.id.tilemail);
         tilusername = findViewById(R.id.tilusername);
         tilpassword = findViewById(R.id.tilpassword);
-        gender = findViewById(R.id.rggender);
+        gender = findViewById(R.id.radio);
         btnsignup = findViewById(R.id.btnsignup);
         pindahlogin = findViewById(R.id.pindahlogin);
         //fetching view's id
@@ -152,14 +154,40 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
+
+        gender.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                radioButton = findViewById(gender.getCheckedRadioButtonId());
+            }
+        });
+
+
         btnsignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (tilpassword.getHelperText()=="Password kuat" && tilemail.getHelperText()=="Email benar" && tilusername.getHelperText()=="Username valid" && gender.getCheckedRadioButtonId() != -1) {
-                    Toast.makeText(SignupActivity.this, "Anda berhasil signup", Toast.LENGTH_SHORT).show();
+
+                radioButton = findViewById(gender.getCheckedRadioButtonId());
+
+                if(!userHelper.checkUsername(username.getText().toString()) && !userHelper.checkEmail(email.getText().toString())){
+                    if (tilpassword.getHelperText()=="Password kuat" && tilemail.getHelperText()=="Email benar"
+                            && tilusername.getHelperText()=="Username valid" && gender.getCheckedRadioButtonId() != -1) {
+
+                        userHelper.insert(nama.getText().toString().trim(), username.getText().toString().trim(),
+                                password.getText().toString().trim(), email.getText().toString().trim(), radioButton.getText().toString().trim());
+
+                        Toast.makeText(SignupActivity.this, "Berhasil signup", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(SignupActivity.this,LoginActivity.class));
+                        finish();
+                    }
+                }if(userHelper.checkUsername(username.getText().toString()) || userHelper.checkEmail(email.getText().toString())){
+                    Toast.makeText(SignupActivity.this, "username/email sudah ada", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Toast.makeText(SignupActivity.this, "Tidak berhasil, harap isi semua data anda dengan benar", Toast.LENGTH_SHORT).show();
+                    if(TextUtils.isEmpty(nama.getText().toString()) || TextUtils.isEmpty(email.getText().toString()) ||
+                            TextUtils.isEmpty(username.getText().toString()) || TextUtils.isEmpty(password.getText().toString()) || TextUtils.isEmpty(radioButton.getText().toString())){
+                        Toast.makeText(SignupActivity.this, "Gagal signup, harap isi semua data anda dengan benar", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });
@@ -173,4 +201,29 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
     }
+
+//    public void userSignup (SignupRequest signupRequest){
+//
+//        Call <SignupResponse> signupResponseCall = ApiClient.getService().userSignup(signupRequest);
+//        signupResponseCall.enqueue(new Callback<SignupResponse>() {
+//            @Override
+//            public void onResponse(Call<SignupResponse> call, Response<SignupResponse> response) {
+//                if(response.isSuccessful()){
+//                    Toast.makeText(SignupActivity.this, "Berhasil membuat akun", Toast.LENGTH_LONG).show();
+//
+//                    startActivity(new Intent(SignupActivity.this, LoginActivity.class));
+//                    finish();
+//                }else{
+//                    Toast.makeText(SignupActivity.this, "Terjadi kesalahan harap coba kembali", Toast.LENGTH_LONG).show();
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<SignupResponse> call, Throwable t) {
+//
+//                Toast.makeText(SignupActivity.this, t.getLocalizedMessage(),Toast.LENGTH_LONG).show();
+//            }
+//        });
+//    }
+
 }
