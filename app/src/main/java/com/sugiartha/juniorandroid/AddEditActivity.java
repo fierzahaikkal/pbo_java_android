@@ -2,6 +2,7 @@ package com.sugiartha.juniorandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -51,6 +52,10 @@ public class AddEditActivity extends AppCompatActivity {
                 try {
                     if (txt_id.getText().toString().equals("")) {
                         save();
+                        Intent intent = new Intent(AddEditActivity.this, SQLiteActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
+                        finish();
                     } else {
                         edit();
                     }
@@ -101,8 +106,7 @@ public class AddEditActivity extends AppCompatActivity {
                     "Please input name or address ...", Toast.LENGTH_SHORT).show();
         } else {
             SQLite.insert(txt_name.getText().toString().trim(), txt_address.getText().toString().trim());
-            blank();
-            finish();
+
         }
     }
     // Update data kedalam Database SQLite
