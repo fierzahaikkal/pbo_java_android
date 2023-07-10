@@ -19,6 +19,31 @@ These instructions will help you set up the project on your local machine for de
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git): Install Git if it's not already installed.
 - GitHub Account: Create a GitHub account if you don't have one.
 
+### Requirements
+
+- Android SDK version: 16 (minSdkVersion)
+- Target SDK version: 33 (targetSdkVersion)
+
+### Depedencies
+```gradle
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    //
+    implementation 'com.synnapps:carouselview:0.1.4'
+    implementation 'com.karumi:dexter:6.2.3'
+    implementation 'com.airbnb.android:lottie:6.0.1'
+
+    //OkHttp
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.11.0'
+```
+
 ### Installation
 
 1. Clone the repository:
