@@ -10,11 +10,11 @@
         android:id="@+id/begron"
         android:layout_width="800px"
         android:layout_height="800px"
-        android:background="@drawable/btn_bulat">
+        android:background="@drawable/bulat_terang">
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/imgsensor2"
-            android:layout_width="203dp"
+            android:layout_width="500px"
             android:layout_height="500px"
             android:layout_gravity="center"
             app:lottie_autoPlay="true"
