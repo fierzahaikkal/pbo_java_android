@@ -25,7 +25,7 @@ import com.synnapps.carouselview.ImageListener;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    Button btnNama, btnKalkulator, btnLingkaran, btnBilangan, btnLogin, btnSignup, btnCalculator, btnBMI, btnListview, btnList, btnSqlite, btnMysql, btngps, btnseluler, btnsensor, btncatatan, btninternalexternal, btnstorage;
+    Button btnNama, btnKalkulator, btnLingkaran, btnBilangan, btnLogin, btnSignup, btnCalculator, btnBMI, btnListview, btnList, btnSqlite, btnMysql, btngps, btnseluler, btnsensor, btncatatan, btninternalexternal, btnstorage, btnclose;
 
     CarouselView carouselView;
     int[] sampleImages = {R.drawable.gambar_1, R.drawable.gambar_2, R.drawable.gambar_3};
@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity
         btngps = (Button) findViewById(R.id.gps);
         btnseluler = (Button) findViewById(R.id.seluler);
         btnsensor = (Button) findViewById(R.id.sensor);
+        btnclose = findViewById(R.id.btnclose);
         btncatatan = findViewById(R.id.catatan);
         btninternalexternal = findViewById(R.id.internalexternal);
         btnstorage = findViewById(R.id.storage);
@@ -67,6 +68,13 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, NamaActivity.class);
                 startActivity(i);
+            }
+        });
+
+        btnclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 

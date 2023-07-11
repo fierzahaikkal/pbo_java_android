@@ -10,8 +10,9 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="200px"
-        android:src="@drawable/logo_dts"/>
+        android:layout_height="270px"
+        android:layout_gravity="center"
+        android:src="@drawable/digitalent"/>
 
     <RelativeLayout
         android:layout_width="900px"
